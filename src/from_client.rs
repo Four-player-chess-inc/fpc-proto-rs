@@ -12,6 +12,8 @@ pub enum FromClient {
 #[serde(rename_all = "snake_case")]
 pub enum MatchmakingQueue {
     Register { name: String },
+    Leave {},
+    HeartbeatCheck {},
 }
 
 #[derive(Error, Debug)]
